@@ -1,0 +1,24 @@
+.TH SNVM 1 "29 Jan 2017" "0.0.1" "System Node Version Manager"
+.SH NAME
+System Node Version Manager (snvm)
+.SH SYNOPSIS
+snvm [OPTION]
+.SH DESCRIPTION
+System Node Version Manager (snvm) is a utility to set your system version of node. All it does is set symbolic links in /usr/bin/ pointing to nvm versions of node and npm. It is to be used in conjunction with nvm.
+.SH OPTIONS
+current  displays the current system version
+
+set      sets the version of node to be used be the system.
+         If no version number is passed in, the system version
+         is set to the current version being used by nvm
+
+         EXAMPLE: snvm set 6.9.4
+
+unset    delets the symbolic links
+
+-h       display this man page
+
+-v       output version information and exit
+
+.SH AUTHOR
+Dan Steren (daniel.d.steren@gmail.com)
